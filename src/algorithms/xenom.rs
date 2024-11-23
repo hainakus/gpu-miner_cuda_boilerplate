@@ -1,13 +1,13 @@
-// src/algorithms/autolykos2.rs
+// src/algorithms/kawpow.rs
 use super::MiningAlgorithm;
 use crate::gpu::GpuContext;
 use crate::error::MinerError;
 
-pub struct Autolykos2 {
-    // Fields specific to Autolykos2
+pub struct Xenom {
+    // Fields specific to KawPow
 }
 
-impl Autolykos2 {
+impl Xenom {
     pub fn new() -> Self {
         Self {
             // Initialize fields
@@ -15,7 +15,7 @@ impl Autolykos2 {
     }
 }
 
-impl MiningAlgorithm for Autolykos2 {
+impl MiningAlgorithm for Xenom {
     fn initialize(&mut self, gpu_context: &GpuContext) -> Result<(), MinerError> {
         // Initialize algorithm-specific resources
         Ok(())
